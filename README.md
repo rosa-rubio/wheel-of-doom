@@ -1,3 +1,4 @@
+![image](https://github.com/florienborg/wheel-of-doom/assets/131755081/423d1cc8-b9c4-4e98-8afc-1a1bbfa6b0e1)
 # Wheel of Doom
 
 ## Objetivos
