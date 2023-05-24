@@ -93,3 +93,5 @@ Trabajaremos en equipos, usando metodologías ágiles, con los marcos de trabajo
 - Maquetar una aplicación
 - Desarrollar una interfaz de usuario web dinámica y adaptable con Javascript
 - Creatividad conceptual del proyecto
+
+Desarrolladoras
