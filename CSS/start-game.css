@@ -5,3 +5,95 @@
     --var-darkred: #B41414;
   
   }
+
+  @media screen and( max-width:576px ){ 
+  
+    body{
+      background: url("/img/cover.svg");
+      background-position:  center;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+
+  }
+
+  header{
+    background-color: var(--var-grey);
+    display: flex;
+    height: 10vh;
+      
+  }
+
+  .logo{
+    padding: 8px;
+  }
+
+  h5{
+    color: var(--var-white );
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+  }
+
+  .title-game{
+    display: flex;
+    justify-content: flex-end;
+    /* width="237" height="153" */
+
+  }
+
+  .img-title{
+  margin: 2%;
+  width: auto;
+}
+
+h2{
+  color:var(--var-white);
+  font-size: 1.5rem;
+}
+
+
+.home-functionality{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem;
+  gap: 10px;
+}
+
+.access-button{
+  background-color: var(--var-darkred);
+  border-radius: 16px;
+  color: var(--var-white);
+  width: 70%;
+  
+  
+  
+}
+
+
+
+
+  /* DESKTOP */
+
+  /* Mobile: hasta 576px
+Tablet: entre 768px a 992px
+Desktop: entre 1200 a 1440px */
+  
+  body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background: url("/img/cover.svg");
+  }
+   /* background-size: center;
+  } 
+
+ 
