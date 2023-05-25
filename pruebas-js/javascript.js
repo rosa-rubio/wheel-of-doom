@@ -26,6 +26,11 @@
             rmvButton.classList.add("rmv-button");
             rmvButton.textContent = "x";
             nameList.appendChild(rmvButton);
+            rmvButton.addEventListener("click", function() {
+              nameArray.pop();
+              listItem.remove();
+              rmvButton.remove();
+            });
             nameInput.value = "";
         
     }}  else {
@@ -52,17 +57,10 @@ nameInput.addEventListener("focus", function() {
     }
   }
 
-//   function removeName() {
-//   const rmvButton = document.querySelector(".rmv-button");
-// }
-
- 
-
+  
 //función aleatoria prueba
 const array = ['Pedro', 'María', 'Juan', 'Marta'];
 let randomNumb = Math.floor(Math.random() * array.length);
 console.log(array[randomNumb]);
 
-
-//función quitar coder añadido
 
