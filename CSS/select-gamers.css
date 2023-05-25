@@ -1,16 +1,109 @@
 :root {
-    --var-blood: #FF0000;
-    --var-black: #000000;
-    --var-darkgrey: #444444;
-    --var-darkgrey: #B8B8B8;
-    --var-white: #FFFFFF;  
-    --var-darkred: #B41414;
-  
-  }
+  --var-blood: #FF0000;
+  --var-grey: #444444;
+  --var-white: #FFFFFF;
+  --var-darkred: #B41414;
+}
 
+* {
+  box-sizing: border-box;
+}
 
+html {
+  width: 100%;
+  height: 100%;
+}
 
+.body-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
 
+.header-container{
+  background-color: var(--var-grey);
+  display: flex;
+  height: 10vh;   
+}
 
+.logo{
+  padding: 8px;
+}
 
-  
+h5{
+  color: var(--var-white );
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.title-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: var(--var-white);
+  background-color: black;
+}
+
+h1 {
+  align-self: center;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 14px;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+input {
+  padding-left: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 20rem;
+  background-color: lightgray;
+}
+
+::placeholder {
+  font-weight: 700;
+  color: black;
+}
+
+.add-victim, .random-button {
+background-color: var(--var-darkred);
+border-radius: 16px;
+color: var(--var-white);
+width: 12rem;
+align-self: center;
+margin-bottom: 1rem;
+padding-bottom: 0.45rem;
+}
+
+.knife-icon {
+margin-right: 0.75rem;
+margin-top: 0.25rem;
+}
+
+.add-names {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-killing{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;  
+background-image: url(/img/cover.svg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+height: 70vh;
+}
