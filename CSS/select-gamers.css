@@ -4,8 +4,10 @@
   --var-white: #FFFFFF;
   --var-darkred: #B41414;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 * {
+  
   box-sizing: border-box;
 }
 
@@ -49,6 +51,7 @@ h5{
   padding-right: 32px;
   color: var(--var-white);
   background-color: black;
+  font-family: 'Inter', sans-serif;
 }
 
 h1 {
