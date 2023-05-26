@@ -1,5 +1,6 @@
 ![image](https://github.com/florienborg/wheel-of-doom/assets/131755081/423d1cc8-b9c4-4e98-8afc-1a1bbfa6b0e1)
 # Wheel of Doom
+![wheelofDeath1](https://github.com/florienborg/wheel-of-doom/assets/131755081/29358bc2-5eab-4c27-b9d4-cc1cb3209a6d)
 
 ## Objetivos
 
