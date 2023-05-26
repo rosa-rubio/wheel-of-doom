@@ -63,6 +63,26 @@
     justify-content: space-between;
     height: 80vh;
   }
-  
 
+  .victim-selected{
+
+  }
+
+  .eliminated-card{
+
+    background-image:url(/img/text-por-ahora.svg);
+    background-image:url(/img/texto-estas-vivo.svg);
+  }
+  
+.next-victim-button{
+  border-radius: 16px;
+  width: 200px;
+  padding: 8px;
+  background-color: var(--var-darkred);
+  color: var(--var-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
   
