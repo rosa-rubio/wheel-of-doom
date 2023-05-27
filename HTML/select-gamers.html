@@ -16,18 +16,23 @@
 
     <main class="main-container">
         <section class="title-description">
-            <h1>¡Qué comience el juego!</h1>
-            <p>¿Tienes vari@s coders para eliminar, pero te sientes generos@ y quieres salvar a un@? Introduce los nombres a continuación ¡y deja sus vidas en manos del azar!</p>
+            <div class="text">
+                <h1>¡Qué comience el juego!</h1>
+                <p>Introduce el nombre de tus víctimas a continuación y deja sus vidas en manos del azar...</p>
+            </div>
             <div class="add-names">
-                <label for="victims">Introduce un nombre:</label>
-                <input id="victims" type="text" placeholder="Nombre">
+                <input id="victims" type="text">
                 <button class="add-victim"><img class="knife-icon" src="/img/iconknife.svg" alt="icono de un cuchillo">Añadir víctima</button>
             </div>
         </section>
 
         <section class="start-killing">
-            <div class="cards"></div>
-            <button class="random-button"><img class="knife-icon" src="/img/iconknife.svg" alt="icono de un cuchillo">Pulsar para matar</button>
+            <div class="cards">
+                <ul id="name-list" class="name-list"></ul>
+            </div>
+            <div class="button2">
+                <button class="random-button"><img class="knife-icon" src="/img/iconknife.svg" alt="icono de un cuchillo">Pulsar para matar</button>
+            </div>
         </section>
     </main>
 
