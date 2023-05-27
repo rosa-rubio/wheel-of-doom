@@ -62,6 +62,9 @@ function hideAlertMessage() {
 randomButton.addEventListener("click", function() {
     if (nameArray.length > 0) {
       let randomNumb = Math.floor(Math.random() * nameArray.length);
+      nameArray.splice(randomNumb, 1);
       console.log(nameArray[randomNumb]);
+      const listItemToRemove = nameList.childNodes[randomNumb];
+      listItemToRemove.remove();
     } 
   });
