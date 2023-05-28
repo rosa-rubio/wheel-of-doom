@@ -7,11 +7,19 @@
   <link rel="stylesheet" href="/CSS/start-game.css">
   <title>Wheel Of Doom</title>
 </head>
-<body class="body-container">
 
+<body class="body-container">
+  
   <header class="header-container">
     <img class="logo" src="/img/logo.svg" alt="Logo de LadyKillers">
      <h5>Lady Killers</h5>
+     <button id="pause-play-button">
+      <img id="pause-play-button" src="/img/button-pause1.png" alt="Icono para pausar música">
+      <img id="pause-play-button" src="/img/button-play.png" alt="Icono para reproducir música"></button>
+     <audio id="music-player" autoplay loop>
+      <source src="/Sounds/the-huntress-lullaby.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
   </header>
 
   <main > 
@@ -23,7 +31,7 @@
 
       <div class="home-functionality">
       <h2>¿Es hoy tu día de muerte?</h2>
-      <a href="./select-gamers.html"><button class="access-button"><img class="knife-icon" src="/img/iconknife.svg" alt="icono de un cuchillo">Ingresar al Juego </button></a>
+      <button id="access-button" onclick="redirectToPage()"><img class="knife-icon" src="/img/iconknife.svg" alt="icono de un cuchillo">Ingresar al Juego </button>
     </div>
     
   </div>
@@ -32,3 +40,4 @@
   <script src="/JAVASCRIPT/code.js"></script>
 </body>
 </html>
+
