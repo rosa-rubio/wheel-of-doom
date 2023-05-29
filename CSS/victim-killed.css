@@ -33,14 +33,6 @@
     height: 100vh;
   }
 
-  .victim-selected{
-    display: flex;
-    position: center;
-    width:382px;
-    height: 434px;
-    background-color: #000000;
-    
-  }
 
   .eliminated-card{
     
@@ -61,12 +53,14 @@
 
   header{
     background-color: var(--grey);
+    color: var(--white);
     display: flex;
     height: 80px;
     align-items: center;
     justify-content: start;
     gap: 16px;
     padding: 8px 16px;
+
   }
   
   main{
@@ -78,7 +72,18 @@
 
   .victim-selected{
 
-  }
+      display: flex;
+      position: center;
+      width:382px;
+      height: 434px;
+      background-color: #000000;
+      border-radius: 5%;
+      box-shadow: 9px 4px 8px 9px;
+
+      
+    }
+
+
 
   .eliminated-card{
 
@@ -99,9 +104,9 @@
 }
   
 .animation-blood{
-  position:fixed; 
+  position:butom; 
   top:0; 
   left:0; 
-  width:100%; 
+  width: 20%; 
   height:150px;
 }
