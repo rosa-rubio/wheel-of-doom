@@ -27,7 +27,7 @@ header {
   height: 3rem;
   align-items: center;
   justify-content: start;
-  gap: 16px;
+  gap: 1rem;
   padding: 0.5rem 1rem;
   position: relative;
 }

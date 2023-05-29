@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 :root {
-  --blood: #FF0000;
-  --grey: #444444;
-  --black: #000000;
-  --white: #FFFFFF;
-  --darkred: #B41414;
+  --var-blood: #FF0000;
+  --var-grey: #444444;
+  --var-white: #FFFFFF;
+  --var-darkred: #B41414;
 }
 
 * {
@@ -29,17 +28,20 @@ html {
 }
 
 .header-container{
-  background-color: var(--grey);
+  background-color: var(--var-grey);
+  display: flex;
   align-items: center;
-  height: 10vh;   
+  height: 3rem;
+  gap: 1rem;
+  padding: 0.5rem 1rem;   
 }
 
 .logo{
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 h5{
-  color: var(--white );
+  color: var(--var-white );
 }
 
 .main-container{
@@ -52,11 +54,11 @@ h5{
 .title-description{
   display: flex;
   flex-direction: column;
-  height: 312px;
-  padding-left: 32px;
-  padding-right: 32px;
+  height: 20.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: var(--var-white);
-  background-color: var(--black);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .text {
@@ -76,7 +78,7 @@ h1 {
 }
 
 p {
-  margin-top: 14px;
+  margin-top: 0.875rem;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -86,29 +88,30 @@ input {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   width: 20rem;
-  background-color:var(--white);
-  border-radius: 18px;
-  color: var(--blood);
+  background-color: lightgray;
+  border-radius: 1.125rem;
+  color: red;
 }
 
 input:focus {
-  outline-color:var(--blood);
+  outline-color:red;
   font-weight: 700;
-  color: var(--blood);
+  color: red;
 }
 
 .alert-message {
   font-size: 1rem;
-  color:var(--white);
+  color: white;
   margin: 0;
 }
 
 .add-victim {
 background-color: var(--var-darkred);
-border-radius: 16px;
-font-size: 1rem;
+border-radius: 2rem;
+font-size: 16px;
 color: var(--var-white);
 width: 12rem;
+height: 3rem;
 align-self: center;
 margin-bottom: 1rem;
 margin-top: 1rem;
@@ -119,10 +122,11 @@ margin-bottom: 2rem;
 
 .random-button {
   background-color: var(--var-darkred);
-  border-radius: 16px;
-  font-size: 1rem;
+  border-radius: 2rem;
+  font-size: 16px;
   color: var(--var-white);
   width: 12rem;
+  height: 3rem;
   align-self: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -140,8 +144,8 @@ margin-top: 0.25rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-left: 32px;
-padding-right: 32px;
+padding-left: 2rem;
+padding-right: 2rem;
 margin-bottom: 2rem;
 height: 50vh;
 }
@@ -149,13 +153,13 @@ height: 50vh;
 #name-list {
   margin: 2.5rem 1rem 1.5rem 1rem;
   padding: 0;
-  width: 275px;
-  height: 300px;
+  width: 17.2rem;
+  height: 18.75rem;
   overflow-y: scroll;
 }
 
 .list-name {
-  color: var(--white);
+  color: white;
   font-size: 1rem;
   padding: 0.6rem 1rem;
   display: flex;
@@ -167,7 +171,7 @@ height: 50vh;
 }
 
 .rmv-button {
-  color: var(--black);
+  color: var(--var-grey);
   font-weight: 700;
   border-radius: 50%;
 }

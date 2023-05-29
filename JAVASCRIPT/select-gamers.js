@@ -68,3 +68,13 @@ randomButton.addEventListener("click", function() {
       listItemToRemove.remove();
     } 
   });
+
+  
+//Botón añadir victima
+const  victimButton = document.querySelector(".add-victim");
+const knifeSound = new Audio("/Sounds/slashkut.mp3");
+
+victimButton.addEventListener("click", function(event) {
+  knifeSound.currentTime = 0;  
+  knifeSound.play();
+});
