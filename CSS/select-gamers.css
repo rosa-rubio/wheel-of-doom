@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 :root {
-  --var-blood: #FF0000;
-  --var-grey: #444444;
-  --var-white: #FFFFFF;
-  --var-darkred: #B41414;
+  --blood: #FF0000;
+  --grey: #444444;
+  --black: #000000;
+  --white: #FFFFFF;
+  --darkred: #B41414;
 }
 
 * {
@@ -28,8 +29,7 @@ html {
 }
 
 .header-container{
-  background-color: rgba(64, 64, 64, 0.85);
-  display: flex;
+  background-color: var(--grey);
   align-items: center;
   height: 10vh;   
 }
@@ -39,7 +39,7 @@ html {
 }
 
 h5{
-  color: var(--var-white );
+  color: var(--white );
 }
 
 .main-container{
@@ -56,7 +56,7 @@ h5{
   padding-left: 32px;
   padding-right: 32px;
   color: var(--var-white);
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: var(--black);
 }
 
 .text {
@@ -86,20 +86,20 @@ input {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   width: 20rem;
-  background-color: lightgray;
+  background-color:var(--white);
   border-radius: 18px;
-  color: red;
+  color: var(--blood);
 }
 
 input:focus {
-  outline-color:red;
+  outline-color:var(--blood);
   font-weight: 700;
-  color: red;
+  color: var(--blood);
 }
 
 .alert-message {
   font-size: 1rem;
-  color: white;
+  color:var(--white);
   margin: 0;
 }
 
@@ -155,7 +155,7 @@ height: 50vh;
 }
 
 .list-name {
-  color: white;
+  color: var(--white);
   font-size: 1rem;
   padding: 0.6rem 1rem;
   display: flex;
@@ -167,7 +167,7 @@ height: 50vh;
 }
 
 .rmv-button {
-  color: black;
+  color: var(--black);
   font-weight: 700;
   border-radius: 50%;
 }

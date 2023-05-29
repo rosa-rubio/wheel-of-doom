@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 :root {
-  --var-blood: #FF0000;
-  --var-grey: #444444;
-  --var-white: #FFFFFF;
-  --var-darkred: #B41414;
+  --blood: #FF0000;
+  --grey: #444444;
+  --white: #FFFFFF;
+  --darkred: #B41414;
 }
 
 * {
@@ -22,7 +22,7 @@ header {
 }
 
 .header-container {
-  background-color: var(--var-grey);
+  background-color: var(--grey);
   display: flex;
   height: 3rem;
   align-items: center;
@@ -33,7 +33,7 @@ header {
 }
 
 h5 {
-  color: var(--var-white);
+  color: var(--white);
 }
 
 #pause-play-button {
@@ -42,7 +42,7 @@ h5 {
   right: 0;
   width: 2rem;
   height: 2rem;
-  background-color: var(--var-darkred);
+  background-color: var(--darkred);
   position: absolute;
   border-radius: 2rem;
   border: none;
@@ -85,7 +85,7 @@ main {
 }
 
 h2 {
-  color: var(--var-white);
+  color: var(--white);
   font-size: 25px;
 }
 
@@ -94,8 +94,8 @@ h2 {
   width: 15rem;
   height: 3rem;
   padding: 0.5rem;
-  background-color: var(--var-darkred);
-  color: var(--var-white);
+  background-color: var(--darkred);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +118,7 @@ h2 {
   }
   
   .header-container {
-    background-color: var(--var-grey);
+    background-color: var(--grey);
     display: flex;
     height: 3rem;
     align-items: center;
@@ -132,8 +132,8 @@ h2 {
     width: 12.5rem;
     height: 3rem;
     padding: 0.5rem;
-    background-color: var(--var-darkred);
-    color: var(--var-white);
+    background-color: var(--darkred);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;

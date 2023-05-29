@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 :root {
-    --var-blood: #FF0000;
-    --var-grey: #444444;
-    --var-white: #FFFFFF;  
-    --var-darkred: #B41414;
-    --var-vanilla: #EFD185; 
+    --blood: #FF0000;
+    --grey: #444444;
+    --white: #FFFFFF;  
+    --darkred: #B41414;
+    --vanilla: #EFD185; 
   
   }
 
@@ -35,7 +35,7 @@
   }
   
   .header-container {
-    background-color: var(--var-grey);
+    background-color: var(--grey);
     display: flex;
     height: 80px;
     align-items: center;
@@ -49,8 +49,8 @@
     border-radius: 16px;
     width: 200px;
     padding: 8px;
-    background-color: var(--var-darkred);
-    color: var(--var-white);
+    background-color: var(--darkred);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,7 @@
     }
     
     .header-container {
-      background-color: var(--var-grey);
+      background-color: var(--grey);
       display: flex;
       height: 80px;
       align-items: center;
@@ -84,8 +84,8 @@
       border-radius: 16px;
       width: 200px;
       padding: 8px;
-      background-color: var(--var-darkred);
-      color: var(--var-white);
+      background-color: var(--darkred);
+      color: var(--white);
       display: flex;
       align-items: center;
       justify-content: center;
