@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
+
 
 :root {
   --var-blood: #FF0000;
-  --var-grey: #444444;
+  --var-grey: #4444448a;
   --var-white: #FFFFFF;
   --var-darkred: #B41414;
 }
@@ -77,15 +78,14 @@ h5{
 }
 
 h1 {
-  font-size: 1.55rem;
+  font-size: 1.60rem;
   margin-bottom: 0;
-  font-weight: 900;
+  font-weight: 9000;
 }
 
 p {
   margin-top: 0.875rem;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.10rem;
 }
 
 input {
@@ -111,22 +111,6 @@ input:focus {
 }
 
 .add-victim {
-background-color: var(--var-darkred);
-border-radius: 2rem;
-font-size: 16px;
-color: var(--var-white);
-width: 12rem;
-height: 3rem;
-align-self: center;
-margin-bottom: 1rem;
-margin-top: 1rem;
-padding-bottom: 0.45rem;
-border: none;
-margin-bottom: 2rem;
-cursor: url(/img/cursor-weapon.ico), pointer;
-}
-
-.random-button {
   background-color: var(--var-darkred);
   border-radius: 2rem;
   font-size: 16px;
@@ -138,12 +122,30 @@ cursor: url(/img/cursor-weapon.ico), pointer;
   margin-top: 1rem;
   padding-bottom: 0.45rem;
   border: none;
+  margin-bottom: 2rem;
+  font-weight: 700;
+ cursor: url(/img/cursor-weapon.ico), pointer;
+}
+
+.random-button {
+  background-color: var(--var-darkred);
+  border-radius: 2rem;
+  font-size: 16px;
+  color: var(--var-white);
+  width: 13rem;
+  height: 3rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 0.45rem;
+  border: none;
+  font-weight: 700;
   cursor: url(/img/cursor-weapon.ico), pointer;
 }
 
 .knife-icon {
-margin-right: 0.75rem;
-margin-top: 0.25rem;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
 }
 
 
@@ -168,7 +170,7 @@ height: 50vh;
 .list-name {
   color: var(--var-white);
   font-size: 1rem;
-  padding: 0.6rem 1rem;
+  padding: 0.9rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -181,4 +183,5 @@ height: 50vh;
   color: var(--var-grey);
   font-weight: 700;
   border-radius: 50%;
+  border: none;
 }

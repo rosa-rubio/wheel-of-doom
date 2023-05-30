@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
 
 :root {
   --blood: #FF0000;
-  --grey: #444444;
+  --grey: #4444448a;
   --white: #FFFFFF;
   --darkred: #B41414;
 }
@@ -39,10 +39,9 @@ h5 {
 
 #pause-play-button {
   display: flex;
-  top: 0;
   right: 0;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--darkred);
   position: absolute;
   border-radius: 3rem;
@@ -103,10 +102,11 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
+  font-weight: 700;
   cursor: url(/img/cursor-weapon.ico), pointer;
 }
 
