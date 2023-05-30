@@ -62,8 +62,8 @@ function hideAlertMessage() {
 randomButton.addEventListener("click", function() {
     if (nameArray.length > 0) {
       let randomNumb = Math.floor(Math.random() * nameArray.length);
-      nameArray.splice(randomNumb, 1);
       console.log(nameArray[randomNumb]);
+      nameArray.splice(randomNumb, 1);
       const listItemToRemove = nameList.childNodes[randomNumb];
       listItemToRemove.remove();
     } 
@@ -77,4 +77,13 @@ const knifeSound = new Audio("/Sounds/slashkut.mp3");
 victimButton.addEventListener("click", function(event) {
   knifeSound.currentTime = 0;  
   knifeSound.play();
+});
+
+//Botón pulsar para matar
+const  killButton = document.querySelector(".random-button");
+const killSound = new Audio("/Sounds/BlastMine.ogg");
+
+killButton.addEventListener("click", function(event) {
+  killSound.currentTime = 0;  
+  killSound.play();
 });

@@ -34,20 +34,24 @@ header {
 
 h5 {
   color: var(--white);
+  font-size: 20px;
 }
 
 #pause-play-button {
   display: flex;
   top: 0;
   right: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--darkred);
   position: absolute;
-  border-radius: 2rem;
+  border-radius: 3rem;
   border: none;
 }
 
+#pause-play-button:hover {
+  cursor: pointer;
+}
 
 .body-container {
   margin: 0px;
@@ -103,7 +107,13 @@ h2 {
   border: none;
   font-size: 16px;
   text-decoration: none;
+  cursor: url(/img/cursor-weapon.ico), pointer;
 }
+
+#access-button:hover {
+  cursor: url(/img/cursor-weapon.ico), pointer;
+}
+
 
 @media (max-width: 576px) {
   main {

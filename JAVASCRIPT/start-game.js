@@ -2,7 +2,6 @@
 const musicPlayer = document.getElementById('music-player');
 const buttonPausePlay = document.getElementById('pause-play-button');
 
-
 buttonPausePlay.addEventListener('click', function() {
   if (musicPlayer.paused) {
     musicPlayer.play();
@@ -27,3 +26,4 @@ setTimeout(function(redirectToPage) {
 
   event.preventDefault();
 });
+
