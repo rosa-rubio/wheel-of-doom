@@ -93,4 +93,5 @@ const killSound = new Audio("/Sounds/BlastMine.ogg");
 killButton.addEventListener("click", function(event) {
   killSound.currentTime = 0;  
   killSound.play();
+  window.location.href = "./victim-killed.html";
 });
