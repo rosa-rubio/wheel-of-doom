@@ -112,6 +112,7 @@ input:focus {
 
 .add-victim {
   background-color: var(--var-darkred);
+  z-index: 1;
   border-radius: 2rem;
   font-size: 16px;
   color: var(--var-white);
@@ -125,7 +126,9 @@ input:focus {
   margin-bottom: 2rem;
   font-weight: 700;
  cursor: url(/img/cursor-weapon.ico), pointer;
+ position: relative;
 }
+
 
 .random-button {
   background-color: var(--var-darkred);

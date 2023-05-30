@@ -87,13 +87,6 @@ victimButton.addEventListener("click", function(event) {
   knifeSound.play();
 });
 
-//Botón back
-const logobutton = document.querySelector(".logo");
-
-logobutton.addEventListener("click", function(backToPage){
-  window.location.href = "./start-game.html";
-});
-
 //Botón pulsar para matar
 const  killButton = document.querySelector(".random-button");
 const killSound = new Audio("/Sounds/BlastMine.ogg");
@@ -101,5 +94,17 @@ const killSound = new Audio("/Sounds/BlastMine.ogg");
 killButton.addEventListener("click", function(event) {
   killSound.currentTime = 0;  
   killSound.play();
-  window.location.href = "./victim-killed.html";
+
+  setTimeout(function(redirectToPage) { 
+    window.location.href = "./victim-killed.html";
+    }, killSound.duration * 1000);
 });
+
+//Botón back
+const logobutton = document.querySelector(".logo");
+
+logobutton.addEventListener("click", function(backToPage){
+  window.location.href = "./start-game.html";
+});
+
+

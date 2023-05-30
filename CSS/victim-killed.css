@@ -1,22 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 :root {
-<<<<<<< HEAD
-    --blood: #FF0000;
-    --black: #000000;
-    --grey: #4444448a;
-    --white: #FFFFFF;  
-    --darkred: #B41414; 
-  
-  }
-=======
   --var-blood: #FF0000;
   --var-grey: #444444;
   --var-white: #FFFFFF;
   --var-darkred: #B41414;
   --var-black: #000000;
 }
->>>>>>> adf12d78261e7f95eeea53ac10ec0fd3b82402bb
 
 * {
     font-family: 'Inter', sans-serif;
@@ -64,6 +54,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .victim-selected {
+    margin: 0;
   }
 
   .eliminated-card {
