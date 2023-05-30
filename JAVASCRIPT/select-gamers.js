@@ -78,3 +78,11 @@ victimButton.addEventListener("click", function(event) {
   knifeSound.currentTime = 0;  
   knifeSound.play();
 });
+
+//Botón back
+const logobutton = document.querySelector(".logo");
+
+logobutton.addEventListener("click", function(backToPage){
+  window.location.href = "./start-game.html";
+});
+

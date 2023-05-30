@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +10,22 @@
 </head>
 
 <body class="body-container">
-  
+
   <header class="header-container">
+
     <img class="logo" src="/img/logo.svg" alt="Logo de LadyKillers">
-     <h5>Lady Killers</h5>
-     <button id="pause-play-button">
+    <h5>Lady Killers</h5>
+    <button id="pause-play-button">
       <img id="pause-play-button" src="/img/button-pause1.png" alt="Icono para pausar música">
       <img id="pause-play-button" src="/img/button-play.png" alt="Icono para reproducir música"></button>
-     <audio id="music-player" autoplay loop>
+    <audio id="music-player" loop> <!-- autoplay -->
       <source src="/Sounds/the-huntress-lullaby.mp3" type="audio/mpeg">
       Tu navegador no soporta el elemento de audio.
     </audio>
+
   </header>
 
-  <main > 
+  <main>
     <div class="main-container">
 
       <div class="title-game">
@@ -30,14 +33,15 @@
       </div>
 
       <div class="home-functionality">
-      <h2>¿Es hoy tu día de muerte?</h2>
-      <button id="access-button" onclick="redirectToPage()"><img class="knife-icon" src="/img/iconknife.svg" alt="icono de un cuchillo">Ingresar al Juego </button>
+        <h2>¿Es hoy tu día de muerte?</h2>
+        <button id="access-button" onclick="redirectToPage()"><img class="knife-icon" src="/img/iconknife.svg"
+            alt="icono de un cuchillo">Ingresar al Juego </button>
+      </div>
+
     </div>
-    
-  </div>
   </main>
 
   <script src="/JAVASCRIPT/start-game.js"></script>
 </body>
-</html>
 
+</html>
