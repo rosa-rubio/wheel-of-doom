@@ -5,6 +5,7 @@
   --var-grey: #444444;
   --var-white: #FFFFFF;
   --var-darkred: #B41414;
+  --var-black: #000000;
 }
 
   * {
@@ -20,6 +21,11 @@
 
   main {
     height: 80vh;
+    display: flex;
+  }
+
+  .logo{
+    padding: 0.5rem;
   }
 
   header {
@@ -50,42 +56,39 @@
     background-position: center;
   }
 
-
-  #next-victim-button {
-  background-color: var(--var-darkred);
-  border-radius: 2rem;
-  font-size: 16px;
-  color: var(--var-white);
-  width: 12rem;
-  height: 3rem;
-  align-self: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding-bottom: 0.45rem;
-  border: none;
-  cursor: url(/img/cursor-weapon.ico), pointer;
+  .eliminated-card {
+    background-color: var(--var-black);
+    width: 50vh;
+    height: 27rem;
+    display: flex;
+    margin-top: 30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 
   }
 
+  #next-victim-button {
+    background-color: var(--var-darkred);
+    border-radius: 2rem;
+    font-size: 16px;
+    color: var(--var-white);
+    width: 12rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.45rem;
+    border: none;
+    cursor: url(/img/cursor-weapon.ico), pointer;
+    position: absolute;
+    top: 42rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-  .victim-selected{
+  .knife-icon {
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+  }
 
-      display: flex;
-      position: center;
-      width:382px;
-      height: 434px;
-      background-color: #000000;
-      border-radius: 5%;
-      box-shadow: 9px 4px 8px 9px;
-
-      
-    }
-
-
-  
-.animation-blood{
-  position:; 
-  top:0; 
-  left:0; 
-  width: 20%; 
-  height:150px;
-}
+ 
