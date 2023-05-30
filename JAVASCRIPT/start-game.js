@@ -1,4 +1,5 @@
 //Reproductor de música con botón de pause/play
+
 const musicPlayer = document.getElementById('music-player');
 const buttonPausePlay = document.getElementById('pause-play-button');
 
