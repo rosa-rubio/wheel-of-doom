@@ -8,10 +8,10 @@
   --var-black: #000000;
 }
 
-  * {
+* {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-  }
+}
   
   html {
     width: 100%;
@@ -66,7 +66,6 @@
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    margin-right: 
   }
 
   #next-victim-button {

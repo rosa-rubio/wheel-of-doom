@@ -1,5 +1,5 @@
-let nameArray = localStorage.getItem('nameArray');
-nameArray = nameArray ? JSON.parse(nameArray): [];
+// let nameArray = localStorage.getItem('nameArray');
+// nameArray = nameArray ? JSON.parse(nameArray): [];
 
 
 const nameInput = document.querySelector("#victims");
@@ -7,7 +7,11 @@ const addButton = document.querySelector(".add-victim");
 const nameList = document.querySelector("#name-list");
 const randomButton = document.querySelector(".random-button");
 
+let nameArray = [];
+
 addButton.addEventListener("click", function() {
+  nameArray = localStorage.getItem('nameArray');
+  nameArray = nameArray ? JSON.parse(nameArray) : [];
   const name = nameInput.value.trim().toLowerCase();
 
   if (name === "") {

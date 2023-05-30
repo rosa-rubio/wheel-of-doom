@@ -1,9 +1,12 @@
 const nameArray = localStorage.getItem('nameArray');
 let names = nameArray ? JSON.parse(nameArray) : [];
-const btnReset = document.getElementById('next-victim-button')
 
-btnReset.addEventListener('click', clearMemory);
+const nextVictim = document.querySelector('#next-victim-button');
+
+nextVictim.addEventListener('click', clearMemory);
 
 function clearMemory() {
-    localStorage.removeItem(nameArray);
+    localStorage.removeItem('nameArray');
+    window.location.href = "./select-gamers.html";
 }
+ 
