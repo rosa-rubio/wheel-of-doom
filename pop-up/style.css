@@ -1,0 +1,58 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --blood: #FF0000;
+    --grey: #4444448a;
+    --darkred: #B41414;
+    
+}
+
+body{
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+button{
+    background-color:var(--darkred);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #383030 ;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 25px;
+
+
+}
+
+.modal-container{
+    display: flex;
+    background-color: var(--grey);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+
+}
+
+.pop-up{
+    background-color: var(--darkred);
+    width: 600px;
+
+    padding: 1em 2rem;
+    border-radius: 1rem;
+
+
+
+}
