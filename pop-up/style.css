@@ -1,18 +1,20 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
 
 * {
     box-sizing: border-box;
+    
 }
 
 :root{
     --blood: #FF0000;
     --grey: #4444448a;
-    --darkred: #B41414;
+    --darkred: #4e0000;
     
 }
 
-body{
+body{ /*fondo de la pagina */
     background-color: var(--grey);
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,38 +22,43 @@ body{
     margin:0;
 }
 
-button{
+button{ /* boton seguir matando */
     background-color:var(--darkred);
     border: 0;
     border-radius: 20px;
-    box-shadow: 0 2px 4px #383030 ;
-    color: white;
-    font-size: 0.8rem;
+    box-shadow: 0 2px 4px #383030 ; /* recomandado ponerle sombra */
+    color: rgb(24, 202, 68);
+    font-size: 16px;
     padding: 10px 25px;
 
 
 }
 
-.modal-container{
+.modal-container{  /* pop-up con la img de sangre hay que adaptarlo */
     display: flex;
-    background-color: var(--grey);
+    background-color: var(--darkred);   
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: fixed; /* se pone encima del boton cuando das click */
     pointer-events: none;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 
 }
 
-.pop-up{
-    background-color: var(--darkred);
-    width: 600px;
-
-    padding: 1em 2rem;
-    border-radius: 1rem;
+.modal{
+    background-color:var(--darkred);
+    background-image: url(/pop-up/blood.svg);
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    text-align: center ;
+    color: white;
 
 
 
