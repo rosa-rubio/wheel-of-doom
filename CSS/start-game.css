@@ -37,6 +37,7 @@ h5 {
   font-size: 20px;
 }
 
+
 #pause-play-button {
   display: flex;
   right: 0;
@@ -46,6 +47,11 @@ h5 {
   position: absolute;
   border-radius: 3rem;
   border: none;
+  
+}
+
+.pause-play-button{
+  margin-right: 1rem;
 }
 
 #pause-play-button:hover {
