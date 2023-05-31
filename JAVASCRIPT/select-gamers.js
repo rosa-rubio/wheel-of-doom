@@ -1,7 +1,3 @@
-// let nameArray = localStorage.getItem('nameArray');
-// nameArray = nameArray ? JSON.parse(nameArray): [];
-
-
 const nameInput = document.querySelector("#victims");
 const addButton = document.querySelector(".add-victim");
 const nameList = document.querySelector("#name-list");
@@ -10,8 +6,6 @@ const randomButton = document.querySelector(".random-button");
 let nameArray = [];
 
 addButton.addEventListener("click", function() {
-  nameArray = localStorage.getItem('nameArray');
-  nameArray = nameArray ? JSON.parse(nameArray) : [];
   const name = nameInput.value.trim().toLowerCase();
 
   if (name === "") {
@@ -19,7 +13,6 @@ addButton.addEventListener("click", function() {
   } else {
     if (!nameArray.includes(name)) {
       nameArray.push(name);
-      localStorage.setItem('nameArray', JSON.stringify(nameArray));
       createListItem(name);
       nameInput.value = "";
     } else {    
@@ -47,7 +40,6 @@ function createListItem(name) {
   rmvButton.addEventListener("click", function() {
     const index = nameArray.indexOf(name);
     nameArray.splice(index, 1);
-    localStorage.setItem('nameArray', JSON.stringify(nameArray));
     listItem.remove();
     rmvButton.remove();
   });
@@ -95,9 +87,9 @@ killButton.addEventListener("click", function(event) {
   killSound.currentTime = 0;  
   killSound.play();
 
-  setTimeout(function(redirectToPage) { 
-    window.location.href = "./victim-killed.html";
-    }, killSound.duration * 1000);
+  // setTimeout(function(redirectToPage) { 
+  //   window.location.href = "./victim-killed.html";
+  //   }, killSound.duration * 1000);
 });
 
 //Botón back
