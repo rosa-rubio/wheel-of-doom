@@ -1,82 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&display=swap');
-
-* {
-    box-sizing: border-box;
-    
-}
-
 :root{
     --blood: #FF0000;
     --grey: #4444448a;
     --darkred: #4e0000;
-    
+    --white: #FFFFFF;
 }
 
-body{ /*fondo de la pagina */
-    background-color: var(--grey);
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin:0;
-}
-
-button{ /* boton seguir matando */
-    background-color:var(--darkred);
-    border: 0;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px var(--darkred) ; /* recomandado ponerle sombra */
-    color: rgb(243, 245, 243);
+#close {
+    display: block;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--white);
+    color: var(--darkred);
     font-size: 16px;
-    padding: 10px 25px;
+    font-weight: 700;
+    border: none;
+    opacity: 0.7;
+  }
 
-
-}
-
-.modal-container{  /* pop-up con la img de sangre hay que adaptarlo */
-    display: flex;
-    background-color: cover var(--grey);   
-    align-items: center;
-    justify-content: center;
-    position: fixed; /* se pone encima del boton cuando das click */
-    pointer-events: none;
-    top: 0;
+  .modal-container {
+    display: none; /* Ocultar el contenedor del popup de forma predeterminada */
+    position: fixed;
+    z-index: 1;
     left: 0;
-    height: 100vh;
-    width: 100vw;
-    opacity: 0; /* esto mantiene oculto el modal ir a JS*/
-    transition: .2s ease-out;
-   
-}
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0); /* Fondo oscuro semitransparente */
+  }
 
-.show{
-    pointer-events: auto;
-    opacity: 1;
-}
 
 .modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color:var(--darkred);
-    background-image: url(/pop-up/blood.svg);
-    width: 250px;
-    height: 250px;
-    max-width: 100%;
+    background-image: url(/img/blood.svg);
+    width: 265px;
+    height: 265px;
+    max-width: 80%;
     padding: 30px 50px;
     border-radius: 10px;
     box-shadow: 0 2px 4px black;
     text-align: center ;
     color: white;
-    --webkit-animation: tremor-animation 0.5s 1;
+    position: relative;
+    top: 23%;
+    transform: translateY(-50%);
+    margin: auto;
 }
 
 
 .modal h1 {
     margin: 0;
-    
+    font-size: 35px;
+    opacity: 0.8;
 }
 
 .modal h3 {
-    opacity: 0.7;
-    font-size: 14px;
+    opacity: 0.8;
+    font-size: 20px;
 
 }

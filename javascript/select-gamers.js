@@ -2,6 +2,9 @@ const nameInput = document.querySelector("#victims");
 const addButton = document.querySelector(".add-victim");
 const nameList = document.querySelector("#name-list");
 const randomButton = document.querySelector(".random-button");
+const modalContainer = document.getElementById("modal_container");
+const closeButton = document.getElementById("close");
+const looser = document.querySelector("#looser");
 
 let nameArray = [];
 
@@ -62,10 +65,11 @@ function hideAlertMessage() {
 randomButton.addEventListener("click", function() {
     if (nameArray.length > 0) {
       let randomNumb = Math.floor(Math.random() * nameArray.length);
-      console.log(nameArray[randomNumb]);
+      looser.innerHTML = nameArray[randomNumb].charAt(0).toUpperCase() + nameArray[randomNumb].slice(1);
       nameArray.splice(randomNumb, 1);
       const listItemToRemove = nameList.childNodes[randomNumb];
       listItemToRemove.remove();
+      modalContainer.style.display = "block";
     } 
   });
 
@@ -87,9 +91,9 @@ killButton.addEventListener("click", function(event) {
   killSound.currentTime = 0;  
   killSound.play();
 
-   setTimeout(function(redirectToPage) { 
-     window.location.href = "./pop-up.html";
-     }, killSound.duration * 1000);
+  //  setTimeout(function(redirectToPage) { 
+  //    window.location.href = "./pop-up.html";
+  //    }, killSound.duration * 1000);
 });
 
 //Botón back
@@ -99,4 +103,6 @@ logobutton.addEventListener("click", function(backToPage){
   window.location.href = "./start-game.html";
 });
 
-
+closeButton.addEventListener("click", function() {
+  modalContainer.style.display = "none";
+});
