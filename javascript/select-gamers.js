@@ -87,9 +87,9 @@ killButton.addEventListener("click", function(event) {
   killSound.currentTime = 0;  
   killSound.play();
 
-  // setTimeout(function(redirectToPage) { 
-  //   window.location.href = "./victim-killed.html";
-  //   }, killSound.duration * 1000);
+   setTimeout(function(redirectToPage) { 
+     window.location.href = "./pop-up.html";
+     }, killSound.duration * 1000);
 });
 
 //Botón back
