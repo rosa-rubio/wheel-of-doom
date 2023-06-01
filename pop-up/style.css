@@ -26,8 +26,8 @@ button{ /* boton seguir matando */
     background-color:var(--darkred);
     border: 0;
     border-radius: 20px;
-    box-shadow: 0 2px 4px #383030 ; /* recomandado ponerle sombra */
-    color: rgb(24, 202, 68);
+    box-shadow: 0 2px 4px var(--darkred) ; /* recomandado ponerle sombra */
+    color: rgb(243, 245, 243);
     font-size: 16px;
     padding: 10px 25px;
 
@@ -36,7 +36,7 @@ button{ /* boton seguir matando */
 
 .modal-container{  /* pop-up con la img de sangre hay que adaptarlo */
     display: flex;
-    background-color: var(--darkred);   
+    background-color: cover var(--grey);   
     align-items: center;
     justify-content: center;
     position: fixed; /* se pone encima del boton cuando das click */
@@ -45,7 +45,14 @@ button{ /* boton seguir matando */
     left: 0;
     height: 100vh;
     width: 100vw;
+    opacity: 0; /* esto mantiene oculto el modal ir a JS*/
+    transition: .2s ease-out;
+   
+}
 
+.show{
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .modal{
@@ -59,7 +66,17 @@ button{ /* boton seguir matando */
     box-shadow: 0 2px 4px black;
     text-align: center ;
     color: white;
+    --webkit-animation: tremor-animation 0.5s 1;
+}
 
 
+.modal h1 {
+    margin: 0;
+    
+}
+
+.modal h3 {
+    opacity: 0.7;
+    font-size: 14px;
 
 }
