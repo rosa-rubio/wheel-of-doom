@@ -1,24 +1,11 @@
-//const = require();
+const logobutton  = require('./javascript/select-gamers.js');
 
-    //describe ('Funcionalidad Boton Ingresar al Juego', () => {
-  //      test('Al hacer click, el botón nos redirige a la página 2', () => {
-         //   expect().ToBe();
-        //  })
-    // });
+    
+test('Al hacer click, el botón del logo nos redirige a la página 1', () => {
+    const button =  document.createElement('button');
 
+    document.body.appendChild(button);
 
-
-    //TEST INTEGRADOR. PREFERIBLE HACER UN TEST UNITARIO PRIMERO
-
-//const { killButton, killSound} = require('./javascript/select-gamers');
-
-//describe('Funcionalidad del Boton Pulsa para Matar', () => {
-//    test('Redirige al Pop-up después del sonido', (done) => {
- //     killButton.dispatchEvent(new window.Event('click'));
-
- //     setTimeout(() => {
-  //      expect(window.location.href).toBe('./javascript/pop-up.js');
-  //      done();
-   //   }, killSound.duration * 1000);
-  //  });
- // });
+    logobutton.click(button);
+    expect(console.log).toHaveBeenCalledWith('¡Click!');
+});
