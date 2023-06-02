@@ -1,6 +1,10 @@
 ![image](https://github.com/florienborg/wheel-of-doom/assets/131755081/423d1cc8-b9c4-4e98-8afc-1a1bbfa6b0e1)
 # Wheel of Doom
-![wheelofDeath1](https://github.com/florienborg/wheel-of-doom/assets/131755081/29358bc2-5eab-4c27-b9d4-cc1cb3209a6d)
+![PLANTILLA1](https://github.com/florienborg/wheel-of-doom/assets/131755081/5e442a73-3d34-4499-97e5-f6bddc8fc6cf)
+![PLANTILLA2](https://github.com/florienborg/wheel-of-doom/assets/131755081/62caf660-5577-4f1a-b555-784ab12ea570)
+![PLANTILLA3](https://github.com/florienborg/wheel-of-doom/assets/131755081/33661f4e-2717-42c5-be26-d5525df8b06a)
+
+
 
 ## Objetivos
 
