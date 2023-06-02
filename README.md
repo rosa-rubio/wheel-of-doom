@@ -95,4 +95,11 @@ Trabajaremos en equipos, usando metodologías ágiles, con los marcos de trabajo
 - Desarrollar una interfaz de usuario web dinámica y adaptable con Javascript
 - Creatividad conceptual del proyecto
 
-Desarrolladoras
+
+### Developers
+
+        Rosa rubio
+        Lorena Morales
+        Florencia Bordon
+        Teresa Villa
+        Cindy Leiva
