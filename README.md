@@ -98,7 +98,7 @@ Trabajaremos en equipos, usando metodologías ágiles, con los marcos de trabajo
 
 ### Developers
 
-        Rosa rubio
+        Rosa Rubio
         Lorena Morales
         Florencia Bordon
         Teresa Villa
