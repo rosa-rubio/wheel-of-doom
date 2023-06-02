@@ -90,10 +90,6 @@ const killSound = new Audio("/Sounds/BlastMine.ogg");
 killButton.addEventListener("click", function(event) {
   killSound.currentTime = 0;  
   killSound.play();
-
-  //  setTimeout(function(redirectToPage) { 
-  //    window.location.href = "./pop-up.html";
-  //    }, killSound.duration * 1000);
 });
 
 //Botón back

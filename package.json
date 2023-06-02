@@ -3,6 +3,8 @@
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "jsdom": "^22.1.0",
+    "jsdom-global": "^3.0.2",
+    "mock-socket": "^9.2.1",
     "text-encoding": "^0.7.0"
   },
   "jest": {
