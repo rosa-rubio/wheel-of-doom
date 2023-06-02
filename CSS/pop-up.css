@@ -19,7 +19,7 @@
   }
 
   .modal-container {
-    display: none; /* Ocultar el contenedor del popup de forma predeterminada */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -27,7 +27,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0); /* Fondo oscuro semitransparente */
+    background-color: rgba(0, 0, 0, 0); 
   }
 
 
@@ -61,5 +61,4 @@
 .modal h3 {
     opacity: 0.8;
     font-size: 20px;
-
 }
