@@ -8,51 +8,40 @@
   --var-darkred: #B41414;
 }
 
-* {
-  font-family: 'Inter', sans-serif;
-  box-sizing: border-box;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-ul{
-  padding: 0px;
-  margin: 0px;
-}
-
 .body-container {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   background-image: url(/img/cover.svg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  height: 100vh;
 }
 
-main {
-  height: 80vh;
-}
-
-.header-container{
-  background-color: var(--var-grey);
+.header-container {
   display: flex;
   align-items: center;
-  height: 3rem;
-  gap: 1rem;
-  padding: 0.5rem 1rem;   
+  justify-content: start;
+  gap: 12px;
+  padding: 0 16px;
+  position: relative;
 }
 
-.logo{
-  padding: 0.5rem;
-}
-
-h5{
-  color: var(--var-white );
+h5 {
+  color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .main-container{
@@ -63,13 +52,14 @@ h5{
 }
 
 .title-description{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 20.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  height: 321px;
+  padding-left: 32px;
+  padding-right: 32px;
   color: var(--var-white);
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .text {
@@ -85,22 +75,23 @@ h5{
 h1 {
   font-size: 1.60rem;
   margin-bottom: 0;
-  font-weight: 9000;
+  font-weight: 900;
 }
 
 p {
   margin-top: 0.875rem;
-  font-size: 1.10rem;
+  font-size: 1.2rem;
 }
 
 input {
-  padding: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  width: 20rem;
+  padding: 12px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  width: 275px;
   background-color: var(--var-white);
   border-radius: 1.125rem;
   color: var(--var-blood);
+  font-size: 1.1rem;
 }
 
 input:focus {
@@ -110,47 +101,44 @@ input:focus {
 }
 
 .alert-message {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--var-white);
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 .add-victim {
+  width: 240px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
   background-color: var(--var-darkred);
-  z-index: 1;
-  border-radius: 2rem;
-  font-size: 16px;
   color: var(--var-white);
-  width: 12rem;
-  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center; 
   border: none;
-  margin-bottom: 2rem;
+  font-size: 1.1rem;
   font-weight: 700;
- cursor: url(/img/cursor-weapon.ico), pointer;
- position: relative;
+  margin-bottom: 32px;
 }
 
 
 .random-button {
+  width: 240px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
   background-color: var(--var-darkred);
-  border-radius: 2rem;
-  font-size: 16px;
   color: var(--var-white);
-  width: 13rem;
-  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-  margin-top: 3rem;
-  padding-bottom: 0.45rem;
+  margin-top: 0;
   border: none;
+  font-size: 1.1rem;
   font-weight: 700;
-  cursor: url(/img/cursor-weapon.ico), pointer;
 }
 
 .knife-icon {
@@ -158,40 +146,40 @@ input:focus {
   margin-top: 0.25rem;
 }
 
-
 .start-killing{
 display: flex;
 flex-direction: column;
 align-items: center;
 padding-left: 2rem;
 padding-right: 2rem;
-margin-bottom: 2rem;
-height: 50vh;
+width: 100%;
+height: 100%;
 }
 
+
 #name-list {
-  width: 280px;
-  height: 280px;
+  width: 800px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  overflow-y: scroll;
 }
 
 .list-name {
   color: var(--var-white);
-  font-size: 1rem;
-  padding: 0.6rem 0.6rem;
+  font-size: 1.2rem;
+  padding: 0 9px 26px 9px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   background-image: url(/img/cardvict.svg);
   margin-bottom: 0.70rem;
-  border-radius: 1rem;
-  width: 100px;
-  height: 100px;
+  border-radius: 16px;
+  width: 85px;
+  height: 85px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -208,4 +196,33 @@ height: 50vh;
   display: flex;
   justify-content: center; 
   align-items: center;
+}
+ 
+@media (max-width: 576px) {
+  
+ 
+    #name-list {
+      width: 280px;
+      height: 280px;
+      padding: 0;
+      margin-top: 32px;
+      gap: 12px;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+    }
+    
+ 
+    .list-name {
+      font-size: 1.2rem;
+      padding: 0 9px 26px 9px;
+      margin-bottom: 0.70rem;
+      border-radius: 16px;
+      width: 100px;
+      height: 100px;
+    }
+  
+  .random-button {
+    margin-top: 2rem;
+  }
+
 }

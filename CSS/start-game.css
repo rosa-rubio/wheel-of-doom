@@ -114,25 +114,24 @@ h2 {
 }
 
 #access-button {
-  border-radius: 2rem;
-  width: 15rem;
-  height: 3rem;
-  padding: 0.5rem;
+  width: 240px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
   background-color: var(--darkred);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 16px;
   border: none;
   font-size: 20px;
   text-decoration: none;
   font-weight: 700;
-  cursor: url(/img/cursor-weapon.ico), pointer;
 }
 
 #access-button:hover {
-  cursor: url(/img/cursor-weapon.ico), pointer;
+  cursor: pointer;
 }
 
 
